@@ -1,0 +1,2 @@
+# ChangeNavigationBarAlphaDemo
+动态改变navigationBar的alpha的几种方法示例
