@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -18,17 +19,23 @@ class ViewController: UIViewController {
         tableView.backgroundColor = UIColor.clearColor()
         navigationItem.leftBarButtonItem = addNavBtn("返回")
         navigationItem.rightBarButtonItem = addNavBtn("测试")
+        
+        
         //背景色
 //        let image = drawImageFromColor(UIColor.redColor().colorWithAlphaComponent(1.0), size: CGSize(width: view.bounds.width, height: 64.0))
         
 //        navigationController?.navigationBar.setBackgroundImage(image, forBarMetrics: .Default)
         
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-//
-        let test = UIView(frame: CGRect(x: 0.0, y: -20.0, width: UIScreen.mainScreen().bounds.size.width, height: 64.0))
-        test.backgroundColor = UIColor.redColor()
-        navigationController?.navigationBar.insertSubview(test, atIndex: 0)
+//        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+//        navigationController?.navigationBar.shadowImage = UIImage()
+////
+//        let test = UIView(frame: CGRect(x: 0.0, y: -20.0, width: UIScreen.mainScreen().bounds.size.width, height: 64.0))
+//        test.backgroundColor = UIColor.redColor()
+//        navigationController?.navigationBar.insertSubview(test, atIndex: 0)
+        
+        // 使用分类
+        navigationController?.zj_setBackgroundColor(UIColor.redColor(), alpha: 1.0)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,7 +88,9 @@ extension ViewController: UIScrollViewDelegate {
 //        navigationController?.navigationBar.setBackgroundImage(image, forBarMetrics: .Default)
 
         //4.改变添加的view的alpha
-        navigationController?.navigationBar.subviews.first?.alpha = alpha
+//        navigationController?.navigationBar.subviews.first?.alpha = alpha
+        
+        navigationController?.zj_setBackgroundColor(UIColor.redColor(), alpha: alpha)
     }
     
     func drawImageFromColor(color: UIColor, size: CGSize) -> UIImage {

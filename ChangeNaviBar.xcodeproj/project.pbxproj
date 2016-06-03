@@ -14,6 +14,7 @@
 		4B0D53751CFAF5F300D8B9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D53731CFAF5F300D8B9A4 /* LaunchScreen.storyboard */; };
 		4B0D53801CFAF5F300D8B9A4 /* ChangeNaviBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D537F1CFAF5F300D8B9A4 /* ChangeNaviBarTests.swift */; };
 		4B0D538B1CFAF5F300D8B9A4 /* ChangeNaviBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D538A1CFAF5F300D8B9A4 /* ChangeNaviBarUITests.swift */; };
+		4B1E9C311D011FF900FBA406 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E9C301D011FF900FBA406 /* UINavigationControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4B0D53861CFAF5F300D8B9A4 /* ChangeNaviBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangeNaviBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0D538A1CFAF5F300D8B9A4 /* ChangeNaviBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNaviBarUITests.swift; sourceTree = "<group>"; };
 		4B0D538C1CFAF5F300D8B9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1E9C301D011FF900FBA406 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4B0D536A1CFAF5F300D8B9A4 /* AppDelegate.swift */,
 				4B0D536C1CFAF5F300D8B9A4 /* ViewController.swift */,
+				4B1E9C301D011FF900FBA406 /* UINavigationControllerExtension.swift */,
 				4B0D536E1CFAF5F300D8B9A4 /* Main.storyboard */,
 				4B0D53711CFAF5F300D8B9A4 /* Assets.xcassets */,
 				4B0D53731CFAF5F300D8B9A4 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1E9C311D011FF900FBA406 /* UINavigationControllerExtension.swift in Sources */,
 				4B0D536D1CFAF5F300D8B9A4 /* ViewController.swift in Sources */,
 				4B0D536B1CFAF5F300D8B9A4 /* AppDelegate.swift in Sources */,
 			);
@@ -486,6 +490,7 @@
 				4B0D53911CFAF5F300D8B9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B0D53921CFAF5F300D8B9A4 /* Build configuration list for PBXNativeTarget "ChangeNaviBarTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				4B0D53941CFAF5F300D8B9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B0D53951CFAF5F300D8B9A4 /* Build configuration list for PBXNativeTarget "ChangeNaviBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				4B0D53971CFAF5F300D8B9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
