@@ -47,9 +47,9 @@ extension UINavigationController {
             zj_alphaView = UIView(frame: CGRect(x: 0.0, y: -20.0, width: UIScreen.mainScreen().bounds.width, height: 64.0))
             navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
             navigationBar.shadowImage = UIImage()
+            navigationBar.insertSubview(zj_alphaView!, atIndex: 0)
         }
         zj_alphaView?.backgroundColor = color.colorWithAlphaComponent(alpha)
-        navigationBar.insertSubview(zj_alphaView!, atIndex: 0)
         
         
     }

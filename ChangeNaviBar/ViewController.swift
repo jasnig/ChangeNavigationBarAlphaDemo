@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         navigationItem.leftBarButtonItem = addNavBtn("返回")
         navigationItem.rightBarButtonItem = addNavBtn("测试")
         
-        
+//        navigationController?.navigationBar.barTintColor = UIColor.redColor()
         //背景色
 //        let image = drawImageFromColor(UIColor.redColor().colorWithAlphaComponent(1.0), size: CGSize(width: view.bounds.width, height: 64.0))
         
