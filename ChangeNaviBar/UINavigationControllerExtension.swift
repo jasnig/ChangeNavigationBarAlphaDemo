@@ -29,7 +29,7 @@
 
 import UIKit
 
-var alphaViewKey = "alphaViewKey"
+private var alphaViewKey = "alphaViewKey"
 extension UINavigationController {
     var zj_alphaView: UIView? {
         set {
